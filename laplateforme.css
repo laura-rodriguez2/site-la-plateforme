@@ -1,17 +1,12 @@
-* /*changements généraux */
-{font-family:"Roboto";
-    color:#111470;
+*
+{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    box-sizing: border-box;
+    font-family: 'roboto slab';
 }
-
-h1 {font-family:"Roboto Slab";
-color:#1a1ead;
-}
-
-h2 
-{font-family:"Roboto Slab";
-color:  #111470;
-}
-/*header */
+/* Le header */
 header
 {
     background-color: rgb(255, 255, 255);
@@ -22,12 +17,14 @@ header
 }
 .logo-formeplate-header /*Logo de La Plateforme_*/
 {
-    height: 80%;
+    height: 60%;
     float: left;
 }
 /* Menu déroulant */
 nav
 {
+    display: flex;
+    flex-direction: column;
     width: 70%;
     margin: 0 auto;
     background-color: white;
@@ -37,11 +34,12 @@ nav
 nav ul
 {
     list-style-type: none;
+    float: right;
 }
 nav ul li
 {
     float: left;
-    width: 15%;
+    width: 10%;
     text-align: center;
     position: relative;
 }
@@ -61,16 +59,15 @@ nav a
 }
 nav a:hover
 {
-    color: #336699ff;
-    border-bottom: 2px solid #336699ff;
+    color: rgb(144, 144, 144);
+
 }
 .en-dessous
 {
     display: none;
-    box-shadow: 0px 1px 27px #CCC;
     background-color: white;
     position: absolute;
-    width: 70%;
+    width: 100%;
     z-index: 1000;
 }
 nav > ul li:hover .en-dessous
@@ -102,511 +99,386 @@ nav
 {
     font-family: 'Roboto Slab', serif;
 }
-/* nav ul {
-    list-style-type: none;
-    margin: 10px 100px 2em ;
-    padding: 5px;
-    float : right ;
-    
-}
- 
-nav li {
-    float: left;
-    width: 20%;
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    
-} */
-
-/*header fin */
-.footer1 {
-    background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    text-align: center;
-}
-    
-.footer2 {
-    background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    text-align: center;
-    
-}
-
-.footer3 {
-    background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    text-align: center;
-}
-
-.droits {background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);}
-
-    /*footer fin */
-
-/*page d'acceuil */
-.accueilpresentation{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-
-}
-.accueilwebcoding{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.accueilia{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.accueilcybersecurity{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    
-}
-.accueilaccelerez{ text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-
-}
-.accueiltemoignage{
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    
-
-}
-.videoaccueil2 {
-    float: right;
-}
-/*page d'acceuil fin*/
-
-/*page cyber sécurité*/
-
-.cbcyber {
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-
-.cbprofessionneldevsecu {
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-
-.cbadminsecu {
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.cbDPO { 
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.cbinscri
-{ text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);}
-    
-    /*page fin cyber sécurité*/
-
-    /* page début qui-sommes-nous? */
-    body{
-        font-family: 'Roboto Mono';font-size: 17px;
-        font-weight:400;
-    }
-    #titre1{
-        color:#336699 ;
-        text-align: center;
-        font-size: 40px;
-        margin-bottom: 50px;
-    }
-    #titre2{
-        color:#336699 ;
-          text-align: center;
-          font-family: Arial, Helvetica, sans-serif;
-          padding-top: 5em;
-    }
-    .texte1{
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 10em;
-        padding-right: 10em;   
-        margin-bottom: 5em;
-    }
-    .texte2{
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 30em;
-        padding-right: 10em; 
-        padding-top: 30px;
-        margin-bottom: 5em;
-    }
-    .p1{
-        color: #666666;
-        justify-content: left;
-    }
-    .logo1{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 96px;
-        height: 96px;
-        padding-left: 42em;
-        margin-bottom: 2em;
-    }
-    .logo2{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        width: 156px;
-        height: 156px;
-        padding-left: 15em;
-        padding-top: 45px;
-        float: left;
-    }
-    .link { color: #336699;
-        text-decoration:none; 
-    }
-    .video1-2{
-        display: flex;
-        flex-direction: row;
-        padding-left: 17em;
-    }
-    .video3{
-        display: flex;
-        flex-direction: row;
-        padding-left: 17em;
-        padding-top: 7em;
-    }
-    #txtvideo1{
-        padding-left: 17em;
-        padding-bottom: 10em;
-        flex-direction: row;
-        position: absolute;
-    }
-    #txtvideo2{
-        padding-left: 50em;
-        padding-bottom: 90em;
-        flex-direction: row;
-        position: absolute
-    }
-    #txtvideo3{
-        padding-left: 17em;
-        padding-bottom: 10em;
-        flex-direction: row;
-        position: absolute;
-    }
-    .noms{
-        color:#336699 ;
-        font-weight: bolder;
-        font-size: 20px;
-    }
-    #imagegroupe{
-        padding-left: 5em;
-    }
-    
-    /* page fin qui-sommes-nous? */
-
-    /* page début ai et coding shcool */
-    .tipo
+/* Le corps */
+/* Résumé */
+.resume
 {
-    text-align: center;
-}
-
-*
-{
-    font-family:"Roboto";
-    color:#111470;
-}
-
-h1 
-{   
-    font-family:"Roboto Slab";
-    color:#1a1ead;
-}
-
-h2 
-{
-    font-family:"Roboto Slab";
-    color:  #111470;
-}
-
-nav ul
-{
-    list-style-type: none;
-    margin: 10px 100px 2em ;
-    padding: 5px;
-    float:left;
-}
- 
-nav li
-{
-    float:right;
-    width: 20%;
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-
-.footer1 {
-    background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    text-align: center;
-}
-    
-.footer2 {
-    background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    text-align: center;
-    
-}
-
-.footer3 {
-    background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    text-align: center;
-}
-
-.droits {background-color:#e2e2e2;
-    border: 1px solid rgb(0, 0, 80);}
-
-
-.accueilpresentation{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-
-}
-.accueilwebcoding{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.accueilia{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.accueilcybersecurity{
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    
-}
-.accueilaccelerez{ text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-
-}
-.accueiltemoignage{
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-    
-
-}
-.videoaccueil2 {
-    float: right;
-}
-
-.cbcyber {
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-
-.cbprofessionneldevsecu {
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-
-.cbadminsecu {
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.cbDPO { 
-    text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);
-}
-.cbinscri
-{ text-align: center;
-    background-color: #e2e2e2;
-    border: 1px solid rgb(0, 0, 80);}
-
-.ect 
-{
-    font-style: italic;
-}   
-
-.caa
-{
-    color:indianred;
-}   
-
-.rectangle{
-	width:1078.39px;
-	height:994.11px;
-	background:#ffffff;
-    position: absolute; top: 220px; left: 420px;
-    
-}
-.tformulaire{
-    font-size: 34px;
-    color: #275FA0;
-    position: absolute; top: 250px; left: 460px;
-}
-.formulaire1{
-    font-size: 16px;
-    position: absolute; top: 450px; left: 490px;
-    line-height: 5em;
-}
-.formulaire2{
-    font-size: 16px;
-    position: absolute; top: 450px; left: 850px;
-    line-height: 5em;
-     border: 1px solid black; padding: 5px;
-}
-.cadre{ 
-    border: 0.5px solid rgb(126, 123, 123); padding: 5px 250px 5px 5px; 
-}
-
-
-#titre1{
-    color:#336699 ;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-#titre2{
-    color:#336699 ;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      padding-top: 5em;
-}
-.texte1{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10em;
-    padding-right: 10em;   
-    margin-bottom: 5em;
-}
-.texte2{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 30em;
-    padding-right: 10em; 
-    padding-top: 30px;
-    margin-bottom: 5em;
-}
-.p1{
-    color: #666666;
-    justify-content: left;
-}
-.logo1{
+    background-color: #336699;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 96px;
-	height: 96px;
-    padding-left: 42em;
-    margin-bottom: 2em;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
 }
-.logo2{
+.resume-formeplate
+{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 25px;
+}
+.resume-formeplate-zone
+{
+    width: 70%;
+    height: 30%;
+    padding: 2em;
+}
+.photo-students{
+    width: 55%;
+}
+/*Bouton*/
+.bouton-1
+{
+    background-color: #ff2063ff;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 80px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.bouton-1:hover, .bouton-1:focus
+{
+    background-color: #F082AC;
+}
+.bouton-2
+{
+    margin-top: 10%;
+    background-color: #ffca4b;
+    border-radius: 20px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    align-self: center;
+}
+
+.conditions, .temoignages-resume
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 10px;
+    padding-left: 1em;
+}
+/* Les cursus */
+.classe-titre
+{
+    font-family: 'Roboto Slab', serif;
+    color: #336699;
+    font-size: 45px;
+}
+.classe-titre-zone
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.classes
+{
+    margin-top: 2%;
+    width: 100%;
+}
+.web-coding, .ai, .cybersec
+{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    width: 156px;
-	height: 156px;
-    padding-left: 15em;
-    padding-top: 45px;
-    float: left;
-}
-.link { color: #336699;
-    text-decoration:none; 
-}
-.video1-2{
-    display: flex;
-    flex-direction: row;
-    padding-left: 17em;
-}
-.video3{
-    display: flex;
-    flex-direction: row;
-    padding-left: 17em;
-    padding-top: 7em;
-}
-#txtvideo1{
-    padding-left: 17em;
-    padding-bottom: 10em;
-    flex-direction: row;
-    position: absolute;
-}
-#txtvideo2{
-    padding-left: 50em;
-    padding-bottom: 90em;
-    flex-direction: row;
-    position: absolute
-}
-#txtvideo3{
-    padding-left: 17em;
-    padding-bottom: 10em;
-    flex-direction: row;
-    position: absolute;
-}
-.noms{
-    color:#336699 ;
-    font-weight: bolder;
-    font-size: 20px;
-}
-#imagegroupe{
-    padding-left: 5em;
-}
-/* page fin ai et codingshcool */
+    width: 50%;
+    align-items: center;
+    box-shadow: 2px 5px 5px 2px rgba(66, 63, 71, 0.1);
 
-/* page début contact */
-.titre {
-    text-align: center;
-    padding-left: 10em;
-    padding-right: 10em;
-    color: #ffffff;
-    font-size: 42px;
+}
+.web-coding-img, .ai-img, .cybersec-img, .recrue-talent-img
+{
+    height: 150px;
+    width: 150px;
+
+}
+.cursus
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    align-items: center;
+}
+.classe-titres
+{
+    margin-top: 5%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: #336699;
+    
+}
+
+.recrue-talent-titres
+{
+    font-family: 'Roboto Slab', serif;
+    color: #336699;
+    font-size: 15px;
+    width: 50%;
+}
+.recrue-talent
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 5px 5px 2px rgba(66, 63, 71, 0.1);
+}
+
+/* Témoignages */
+.classe-titre-zone{
+    display: flex;
+    flex-direction: column;
+}
+.temoignages-titre
+{
+    margin-top: 2%;
+    font-size: 75px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+.temoignages
+{
+    background-color: #ffa000;
+    margin-top: 30px;
+}
+.temoignages-resume{
+    font-size: larger;
+}
+.temoignages-zone
+{
+    margin-top: 3%;
+    padding-bottom: 3%;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.temoignages-zone iframe{
+    padding: 25px;
+}
+
+/* FOOTER */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    /* font-family: acumin-pro, system-ui, sans-serif; */
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: white;
+    background-color: #313131;
+    border-top: 1px solid #e5e5e5;
     font-weight: bolder;
-    line-height: 1.3em;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+width: 70%;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: white;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: white;
+  }
+  
+  .nav__ul--extra {
+    column-count: 1;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 1%;
+ 
+  }
     
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: white;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
     
-}
-body{
-    background-color: #88C1D0;
-    font-family: 'Roboto Mono';font-size: 22px;
+    .nav__item--extra {
+      /* flex-grow: 2; */
+    }
     
-}
-.rectangle{
-	width:1078.39px;
-	height:994.11px;
-	background:#ffffff;
-    position: absolute; top: 220px; left: 420px;
+    .footer__addr {
+      flex: 1 0px;
+    }
     
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+  
+.footer h2{
+    font-weight: bolder;
 }
-.tformulaire{
-    font-size: 34px;
-    color: #275FA0;
-    position: absolute; top: 250px; left: 460px;
+  /* button contact  */
+
+.button-31 {
+  background-color: #313131;
+  border-radius: 4px;
+  border-style:solid;
+  box-sizing: border-box;
+  border-color: white;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 60%;
 }
-.formulaire1{
-    font-size: 16px;
-    position: absolute; top: 450px; left: 490px;
-    line-height: 5em;
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
 }
-.formulaire2{
-    font-size: 16px;
-    position: absolute; top: 450px; left: 850px;
-    line-height: 5em;
-     border: 1px solid black; padding: 5px;
-}
-.cadre{ 
-    border: 0.5px solid rgb(126, 123, 123); padding: 5px 250px 5px 5px; 
-}
-/* page fin contact */
